@@ -39,7 +39,7 @@ class TableViewStandings: UITableView, UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
        
-        tableView.register(UINib(nibName: "StandingsHeader", bundle: nil), forCellReuseIdentifier: "StandingsHeader")
+        tableView.register(UINib(nibName: "StandingsHeader", bundle: nil), forHeaderFooterViewReuseIdentifier: "StandingsHeader")
         
         let header = tableView.dequeueReusableCell(withIdentifier: "StandingsHeader")
     

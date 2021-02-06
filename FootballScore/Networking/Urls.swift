@@ -50,6 +50,20 @@ struct Urls {
         ]
         return urlComponentsResults.url
     }
+    
+    var urlToday: URL?{
+        var urlComponentsDate = URLComponents()
+        urlComponentsDate.scheme = "https"
+        urlComponentsDate.host = "api-football-beta.p.rapidapi.com"
+        urlComponentsDate.path = "/fixtures"
+        urlComponentsDate.queryItems = [
+            URLQueryItem(name: "date", value: "2021-01-30")
+        ]
+    
+        return urlComponentsDate.url
+    }
+    
+    
    
 }
 

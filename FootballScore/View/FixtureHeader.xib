@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Bka-Z5-kGK" customClass="FixtureHeader" customModule="FootballScore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRQ-Hj-aCD">
+                    <rect key="frame" x="20" y="0.0" width="99" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="99" id="WM0-jk-LOT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="17"/>
+                    <color key="textColor" systemColor="systemGray4Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="League" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vB-02-nYW">
+                    <rect key="frame" x="144" y="0.0" width="202" height="40"/>
+                    <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="17"/>
+                    <color key="textColor" systemColor="systemGray4Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="tRm-lH-czZ"/>
+            <constraints>
+                <constraint firstItem="TRQ-Hj-aCD" firstAttribute="centerY" secondItem="Bka-Z5-kGK" secondAttribute="centerY" id="2FC-Sm-NYb"/>
+                <constraint firstItem="TRQ-Hj-aCD" firstAttribute="top" secondItem="Bka-Z5-kGK" secondAttribute="top" id="IOI-Pi-Lhn"/>
+                <constraint firstItem="TRQ-Hj-aCD" firstAttribute="leading" secondItem="tRm-lH-czZ" secondAttribute="leading" constant="20" id="Jt8-ZG-pID"/>
+                <constraint firstItem="4vB-02-nYW" firstAttribute="leading" secondItem="TRQ-Hj-aCD" secondAttribute="trailing" constant="25" id="L3D-bg-cfa"/>
+                <constraint firstAttribute="trailing" secondItem="4vB-02-nYW" secondAttribute="trailing" constant="68" id="Njf-0r-fbV"/>
+                <constraint firstItem="4vB-02-nYW" firstAttribute="centerY" secondItem="Bka-Z5-kGK" secondAttribute="centerY" id="Nwp-8k-Suv"/>
+                <constraint firstItem="4vB-02-nYW" firstAttribute="top" secondItem="Bka-Z5-kGK" secondAttribute="top" id="TmN-H0-c2w"/>
+                <constraint firstItem="tRm-lH-czZ" firstAttribute="bottom" secondItem="4vB-02-nYW" secondAttribute="bottom" id="Wl3-1A-oYk"/>
+                <constraint firstItem="tRm-lH-czZ" firstAttribute="bottom" secondItem="TRQ-Hj-aCD" secondAttribute="bottom" id="gsG-HN-c7N"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="country" destination="TRQ-Hj-aCD" id="nha-ze-b3J"/>
+                <outlet property="league" destination="4vB-02-nYW" id="Ut3-gR-uVc"/>
+            </connections>
+            <point key="canvasLocation" x="-517.39130434782612" y="14.732142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

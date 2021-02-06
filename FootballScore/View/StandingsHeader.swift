@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StandingsHeater: UITableViewCell {
+class StandingsHeader: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

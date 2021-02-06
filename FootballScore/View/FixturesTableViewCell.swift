@@ -46,6 +46,7 @@ class FixturesTableViewCell: UITableViewCell {
         func setupResultsViewCell(_ fixtures: Fixtures){
             
             time.isHidden = true
+            date.text = getDateFormat(dateString: fixtures.date)
             teamHome.text = fixtures.homeTeamName
             teamAway.text = fixtures.awayTeamName
             scoreHomeTeam.text = String(format: "%d", fixtures.goalsHomeTeam ?? "")
@@ -67,7 +68,7 @@ class FixturesTableViewCell: UITableViewCell {
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         dateFormatter.locale = Locale(identifier: "en_US_POSSIX")
         guard let date = dateFormatter.date(from: dateString) else {return ""}
-        dateFormatter.dateFormat = "MM-dd"
+        dateFormatter.dateFormat = "dd-MMM"
         return dateFormatter.string(from: date)
     }
     

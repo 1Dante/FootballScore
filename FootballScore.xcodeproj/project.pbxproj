@@ -21,8 +21,7 @@
 		FA51E455259CD7F3002285EF /* StandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51E453259CD7F3002285EF /* StandingsViewController.swift */; };
 		FA51E45C259CE0B8002285EF /* StandingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51E45A259CE0B8002285EF /* StandingsTableViewCell.swift */; };
 		FA51E45D259CE0B8002285EF /* StandingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA51E45B259CE0B8002285EF /* StandingsTableViewCell.xib */; };
-		FAB534F625C1F1E90054E050 /* FootballProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB534F525C1F1E90054E050 /* FootballProvider.swift */; };
-		FAC76C0D25AB735200DA83F6 /* StandingsHeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC76C0C25AB735200DA83F6 /* StandingsHeater.swift */; };
+		FAC76C0D25AB735200DA83F6 /* StandingsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC76C0C25AB735200DA83F6 /* StandingsHeader.swift */; };
 		FAC76C1325ACC0BF00DA83F6 /* FixturesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC76C1125ACC0BF00DA83F6 /* FixturesTableViewCell.swift */; };
 		FAC76C1425ACC0BF00DA83F6 /* FixturesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC76C1225ACC0BF00DA83F6 /* FixturesTableViewCell.xib */; };
 		FAC76C1F25ACD6AA00DA83F6 /* TableViewFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC76C1E25ACD6AA00DA83F6 /* TableViewFixtures.swift */; };
@@ -30,6 +29,12 @@
 		FACDEB7125C33F6B00DE4EF7 /* StandingsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDEB7025C33F6B00DE4EF7 /* StandingsProvider.swift */; };
 		FACDEB7925C343EF00DE4EF7 /* ResultsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDEB7825C343EF00DE4EF7 /* ResultsProvider.swift */; };
 		FACDEB7E25C346EE00DE4EF7 /* TableViewResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACDEB7D25C346EE00DE4EF7 /* TableViewResults.swift */; };
+		FAD2F72C25C5598B0005ED2B /* TodayFixturesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2F72B25C5598B0005ED2B /* TodayFixturesProvider.swift */; };
+		FAD2F73B25C55D150005ED2B /* TableViewAllFixturesDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2F73A25C55D150005ED2B /* TableViewAllFixturesDate.swift */; };
+		FAD2F74925C561C00005ED2B /* FixturesDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2F74825C561C00005ED2B /* FixturesDateViewController.swift */; };
+		FAD2F74E25C6AD5A0005ED2B /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2F74D25C6AD5A0005ED2B /* RestClient.swift */; };
+		FAD2F75A25CC7EFE0005ED2B /* FixtureHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD2F75825CC7EFE0005ED2B /* FixtureHeader.swift */; };
+		FAD2F75B25CC7EFE0005ED2B /* FixtureHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD2F75925CC7EFE0005ED2B /* FixtureHeader.xib */; };
 		FAE4D01B25B219B80031C1CC /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE4D01A25B219B80031C1CC /* Fixture.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,8 +76,7 @@
 		FA51E453259CD7F3002285EF /* StandingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsViewController.swift; sourceTree = "<group>"; };
 		FA51E45A259CE0B8002285EF /* StandingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableViewCell.swift; sourceTree = "<group>"; };
 		FA51E45B259CE0B8002285EF /* StandingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandingsTableViewCell.xib; sourceTree = "<group>"; };
-		FAB534F525C1F1E90054E050 /* FootballProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballProvider.swift; sourceTree = "<group>"; };
-		FAC76C0C25AB735200DA83F6 /* StandingsHeater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsHeater.swift; sourceTree = "<group>"; };
+		FAC76C0C25AB735200DA83F6 /* StandingsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsHeader.swift; sourceTree = "<group>"; };
 		FAC76C1125ACC0BF00DA83F6 /* FixturesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesTableViewCell.swift; sourceTree = "<group>"; };
 		FAC76C1225ACC0BF00DA83F6 /* FixturesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FixturesTableViewCell.xib; sourceTree = "<group>"; };
 		FAC76C1E25ACD6AA00DA83F6 /* TableViewFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewFixtures.swift; sourceTree = "<group>"; };
@@ -80,6 +84,12 @@
 		FACDEB7025C33F6B00DE4EF7 /* StandingsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsProvider.swift; sourceTree = "<group>"; };
 		FACDEB7825C343EF00DE4EF7 /* ResultsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsProvider.swift; sourceTree = "<group>"; };
 		FACDEB7D25C346EE00DE4EF7 /* TableViewResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewResults.swift; sourceTree = "<group>"; };
+		FAD2F72B25C5598B0005ED2B /* TodayFixturesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayFixturesProvider.swift; sourceTree = "<group>"; };
+		FAD2F73A25C55D150005ED2B /* TableViewAllFixturesDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAllFixturesDate.swift; sourceTree = "<group>"; };
+		FAD2F74825C561C00005ED2B /* FixturesDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixturesDateViewController.swift; sourceTree = "<group>"; };
+		FAD2F74D25C6AD5A0005ED2B /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		FAD2F75825CC7EFE0005ED2B /* FixtureHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureHeader.swift; sourceTree = "<group>"; };
+		FAD2F75925CC7EFE0005ED2B /* FixtureHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FixtureHeader.xib; sourceTree = "<group>"; };
 		FAE4D01A25B219B80031C1CC /* Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,10 +146,8 @@
 				FA51E439259B90DA002285EF /* Networking */,
 				FA51E433259B8DD4002285EF /* Model */,
 				FA51E406259B8D5A002285EF /* Main.storyboard */,
-				FA51E453259CD7F3002285EF /* StandingsViewController.swift */,
-				FA02672C25A9ED59005FB003 /* TableViewStandings.swift */,
-				FAC76C1E25ACD6AA00DA83F6 /* TableViewFixtures.swift */,
-				FACDEB7D25C346EE00DE4EF7 /* TableViewResults.swift */,
+				FAD2F73525C55BC30005ED2B /* StandingsViewController */,
+				FAD2F73625C55BE10005ED2B /* FixturesViewController */,
 				FA51E409259B8D5D002285EF /* Assets.xcassets */,
 				FA51E447259CD732002285EF /* View */,
 				FA51E40B259B8D5D002285EF /* LaunchScreen.storyboard */,
@@ -178,11 +186,12 @@
 		FA51E439259B90DA002285EF /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				FAB534F525C1F1E90054E050 /* FootballProvider.swift */,
 				FACDEB6B25C204C700DE4EF7 /* FixturesProvider.swift */,
+				FAD2F72B25C5598B0005ED2B /* TodayFixturesProvider.swift */,
 				FACDEB7025C33F6B00DE4EF7 /* StandingsProvider.swift */,
 				FACDEB7825C343EF00DE4EF7 /* ResultsProvider.swift */,
 				FA51E442259B9154002285EF /* Urls.swift */,
+				FAD2F74D25C6AD5A0005ED2B /* RestClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -191,13 +200,35 @@
 			isa = PBXGroup;
 			children = (
 				FA51E45A259CE0B8002285EF /* StandingsTableViewCell.swift */,
-				FAC76C0C25AB735200DA83F6 /* StandingsHeater.swift */,
+				FAC76C0C25AB735200DA83F6 /* StandingsHeader.swift */,
+				FAD2F75825CC7EFE0005ED2B /* FixtureHeader.swift */,
+				FAD2F75925CC7EFE0005ED2B /* FixtureHeader.xib */,
 				FAC76C1125ACC0BF00DA83F6 /* FixturesTableViewCell.swift */,
 				FA02671625A5E5E0005FB003 /* StandingsHeader.xib */,
 				FAC76C1225ACC0BF00DA83F6 /* FixturesTableViewCell.xib */,
 				FA51E45B259CE0B8002285EF /* StandingsTableViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FAD2F73525C55BC30005ED2B /* StandingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA51E453259CD7F3002285EF /* StandingsViewController.swift */,
+				FA02672C25A9ED59005FB003 /* TableViewStandings.swift */,
+				FAC76C1E25ACD6AA00DA83F6 /* TableViewFixtures.swift */,
+				FACDEB7D25C346EE00DE4EF7 /* TableViewResults.swift */,
+			);
+			path = StandingsViewController;
+			sourceTree = "<group>";
+		};
+		FAD2F73625C55BE10005ED2B /* FixturesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAD2F74825C561C00005ED2B /* FixturesDateViewController.swift */,
+				FAD2F73A25C55D150005ED2B /* TableViewAllFixturesDate.swift */,
+			);
+			path = FixturesViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA02671825A5E5E0005FB003 /* StandingsHeader.xib in Resources */,
+				FAD2F75B25CC7EFE0005ED2B /* FixtureHeader.xib in Resources */,
 				FA51E40D259B8D5D002285EF /* LaunchScreen.storyboard in Resources */,
 				FA51E45D259CE0B8002285EF /* StandingsTableViewCell.xib in Resources */,
 				FAC76C1425ACC0BF00DA83F6 /* FixturesTableViewCell.xib in Resources */,
@@ -333,17 +365,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC76C0D25AB735200DA83F6 /* StandingsHeater.swift in Sources */,
+				FAD2F73B25C55D150005ED2B /* TableViewAllFixturesDate.swift in Sources */,
+				FAC76C0D25AB735200DA83F6 /* StandingsHeader.swift in Sources */,
 				FA51E435259B8E4C002285EF /* Standings.swift in Sources */,
 				FA51E443259B9154002285EF /* Urls.swift in Sources */,
 				FA51E401259B8D5A002285EF /* AppDelegate.swift in Sources */,
 				FACDEB6C25C204C700DE4EF7 /* FixturesProvider.swift in Sources */,
 				FAC76C1325ACC0BF00DA83F6 /* FixturesTableViewCell.swift in Sources */,
 				FAC76C1F25ACD6AA00DA83F6 /* TableViewFixtures.swift in Sources */,
+				FAD2F74E25C6AD5A0005ED2B /* RestClient.swift in Sources */,
 				FACDEB7125C33F6B00DE4EF7 /* StandingsProvider.swift in Sources */,
+				FAD2F75A25CC7EFE0005ED2B /* FixtureHeader.swift in Sources */,
+				FAD2F72C25C5598B0005ED2B /* TodayFixturesProvider.swift in Sources */,
 				FACDEB7E25C346EE00DE4EF7 /* TableViewResults.swift in Sources */,
 				FA51E45C259CE0B8002285EF /* StandingsTableViewCell.swift in Sources */,
-				FAB534F625C1F1E90054E050 /* FootballProvider.swift in Sources */,
+				FAD2F74925C561C00005ED2B /* FixturesDateViewController.swift in Sources */,
 				FA51E403259B8D5A002285EF /* SceneDelegate.swift in Sources */,
 				FA51E455259CD7F3002285EF /* StandingsViewController.swift in Sources */,
 				FACDEB7925C343EF00DE4EF7 /* ResultsProvider.swift in Sources */,

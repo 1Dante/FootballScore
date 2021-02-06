@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="XJC-5N-2Ml">
-                                <rect key="frame" x="20" y="108" width="374" height="30"/>
+                                <rect key="frame" x="20" y="64" width="374" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gz-Rb-8dt">
                                         <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
@@ -49,19 +49,19 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="RjN-Mm-9s4" customClass="TableViewFixtures" customModule="FootballScore" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="148" width="414" height="714"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" red="0.077225548549999995" green="0.081158788070000001" blue="0.038126493560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="CaQ-lp-Cah" customClass="TableViewResults" customModule="FootballScore" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="148" width="414" height="714"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" red="0.077225548549999995" green="0.081158788070000001" blue="0.038126493560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="kK1-Ub-Wzd" customClass="TableViewStandings" customModule="FootballScore" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="148" width="414" height="714"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -97,7 +97,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Npv-DU-QWd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1226.0869565217392" y="-121.20535714285714"/>
+            <point key="canvasLocation" x="1906" y="-121"/>
+        </scene>
+        <!--Fixtures Date View Controller-->
+        <scene sceneID="Ju7-Yq-d3z">
+            <objects>
+                <viewController id="cOw-L8-Rji" customClass="FixturesDateViewController" customModule="FootballScore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vrM-qR-sPv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9zT-cH-1vG" customClass="TableViewAllFixturesDate" customModule="FootballScore" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="169" width="414" height="693"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eEX-19-SbB"/>
+                        <constraints>
+                            <constraint firstItem="9zT-cH-1vG" firstAttribute="trailing" secondItem="eEX-19-SbB" secondAttribute="trailing" id="HqD-25-UFC"/>
+                            <constraint firstItem="9zT-cH-1vG" firstAttribute="bottom" secondItem="eEX-19-SbB" secondAttribute="bottom" id="PS2-88-dWO"/>
+                            <constraint firstItem="9zT-cH-1vG" firstAttribute="top" secondItem="eEX-19-SbB" secondAttribute="top" constant="81" id="Sx7-xF-3r8"/>
+                            <constraint firstItem="9zT-cH-1vG" firstAttribute="leading" secondItem="eEX-19-SbB" secondAttribute="leading" id="w4j-ai-bUY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ctQ-EO-YgA"/>
+                    <connections>
+                        <outlet property="tableViewAllFixturesDate" destination="9zT-cH-1vG" id="biV-80-86U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAZ-aw-LOz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153.6231884057972" y="-121.20535714285714"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DNS-ro-XnC">
@@ -110,7 +140,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="spc-Si-9YV" kind="relationship" relationship="rootViewController" id="Pow-TQ-R6A"/>
+                        <segue destination="cOw-L8-Rji" kind="relationship" relationship="rootViewController" id="Q2c-Gj-oBO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BEm-hT-lBJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

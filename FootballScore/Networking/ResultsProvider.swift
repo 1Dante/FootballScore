@@ -7,35 +7,18 @@
 
 import Foundation
 
-struct ResultsProvider: FootballProvider{
+struct ResultsProvider{
 
      //The same model like for Standings, only different status for url : FT - finished
-    var url: URL{
+    func fetchJson(completionHandler: @escaping ((Fixture?) -> Void)){
         let urls = Urls()
-        guard let url = urls.urlResults else {preconditionFailure("not right url") }
-        return url
-    }
-    typealias T = (Fixtures?)->Void
-    
-    func fetchJSON(completionHandler: @escaping (Fixtures?) -> Void) {
-        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if error != nil {
-                preconditionFailure("some problem")
-                
-            }
-            if response != nil {
-                //  print(response)
+        let restClinet = RestClient()
+        restClinet.url = urls.urlResults
+        restClinet.fetchData { (data) in
+            let decoder = JSONDecoder()
+            let json = try? decoder.decode(Fixture.self, from: data)
+            completionHandler(json)
         }
-            if let data = data{
-                let decoder = JSONDecoder()
-              
-                let json = try? decoder.decode(Fixture.self, from: data)
-                json?.response?.forEach({ (fixtures) in
-                   completionHandler(fixtures)
-                })
-            }
-}
-        dataTask.resume()
     }
     
     

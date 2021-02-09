@@ -57,10 +57,11 @@ class TableViewAllFixturesDate: UITableView, UITableViewDelegate, UITableViewDat
         let fixture = section.fixture[indexPath.row]
         country = section.fixture[indexPath.row].country
         
-        cell.setupResultsViewCell(fixture)
+        cell.setupResultsTodayViewCell(fixture)
         return cell
     }
 
+    
     
     
 }

@@ -8,8 +8,8 @@
 import UIKit
 
 class FixturesDateViewController: UIViewController {
-    
-    
+    //array for filter only for common league
+    let leagueId = [39,40,41,42,78,79,135,136,140,141,94]
     
     @IBOutlet weak var tableViewAllFixturesDate: TableViewAllFixturesDate!
     
@@ -24,8 +24,19 @@ class FixturesDateViewController: UIViewController {
         
         tableViewAllFixturesDateReference.todayFixturesProvider.fetchJson { (fixture) in
             _ = fixture.flatMap { (fixture) in
+            
                 if let fixture = fixture.response{
-                    self.tableViewAllFixturesDateReference.arrayFixtures = fixture
+                  
+                    //filter all fixtures by common league
+                    _ = fixture.compactMap { (fixture)  in
+                        
+                        for item in self.leagueId{
+                            if fixture.id == item{
+                                self.tableViewAllFixturesDateReference.arrayFixtures.append(fixture)
+                            }
+                        }
+                    }
+                    
                     self.group()
                     DispatchQueue.main.async {
                         self.tableViewAllFixturesDate.reloadData()
@@ -34,10 +45,11 @@ class FixturesDateViewController: UIViewController {
             }
         }
         
+    
     }
     
     func group(){
-        
+    
         let group = Dictionary(grouping: tableViewAllFixturesDateReference.arrayFixtures) { (fixture) -> (String) in
             
             return fixture.leagueName
@@ -46,7 +58,13 @@ class FixturesDateViewController: UIViewController {
         tableViewAllFixturesDateReference.sections = group.map({ (key,value) in
             return SectionForTable(leagueName: key, fixture: value)
         })
+        
     }
     
     
+    
+    
 }
+
+
+

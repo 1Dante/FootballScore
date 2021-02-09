@@ -57,11 +57,28 @@ class FixturesTableViewCell: UITableViewCell {
                 self.logoAwayTeam.image =  self.getUIImage(fixtures.awayTeamLogo)
                 self.logoHomeTeam.image = self.getUIImage(fixtures.homeTeamLogo)
             }
-       
-        
-        
     }
     
+    func setupResultsTodayViewCell(_ fixtures: Fixtures){
+        time.isHidden = true
+        date.text = getDateFormat(dateString: fixtures.date)
+        teamHome.text = fixtures.homeTeamName
+        teamAway.text = fixtures.awayTeamName
+       
+        if fixtures.goalsHomeTeam != nil  || fixtures.goalsAwayTeam != nil  {
+        scoreHomeTeam.text = String(format: "%d", fixtures.goalsHomeTeam ?? "")
+        scoreAwayTeam.text = String(format: "%d", fixtures.goalsAwayTeam ?? "")
+        }else{
+            scoreHomeTeam.isHidden = true
+            scoreAwayTeam.isHidden = true
+        }
+        favoritesButton.isEnabled = false
+        
+        DispatchQueue.main.async {
+            self.logoAwayTeam.image =  self.getUIImage(fixtures.awayTeamLogo)
+            self.logoHomeTeam.image = self.getUIImage(fixtures.homeTeamLogo)
+        }
+    }
     func getDateFormat(dateString: String) -> String{
         let dateFormatter = DateFormatter()
        

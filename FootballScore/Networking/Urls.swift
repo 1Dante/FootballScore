@@ -52,21 +52,33 @@ struct Urls {
     }
     
     var urlToday: URL?{
+       
         var urlComponentsDate = URLComponents()
         urlComponentsDate.scheme = "https"
         urlComponentsDate.host = "api-football-beta.p.rapidapi.com"
         urlComponentsDate.path = "/fixtures"
         urlComponentsDate.queryItems = [
-            URLQueryItem(name: "date", value: "2021-01-30")
+            URLQueryItem(name: "date", value: getTodayDate())
         ]
     
         return urlComponentsDate.url
     }
     
+    func getTodayDate() -> String{
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSSIX")
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let today = dateFormatter.string(from: date)
+        return today
+    }
+    
     
    
 }
-
+//Status for matches:
+//NS - not started, FT : Match Finished, PST - postponed, HT : Halftime, ET : Extra Time,P : Penalty In Progress,AET : Match Finished After Extra Time
+//PEN : Match Finished After Penalty,SUSP : Match Suspended, CANC : Match Cancelled
 
 
 //TODO: add enum with  ids leagues which user tapped
@@ -86,14 +98,7 @@ struct Urls {
     //urlPathComponents.queryItems = [
     //    URLQueryItem(name: "season", value: "2020"),
     //
-    ////URLQueryItem(name: "league", value: "39"), //england EPL
-    ////URLQueryItem(name: "league", value: "140"), //spain primera
-    ////URLQueryItem(name: "league", value: "135"), //italy seria A
-    ////URLQueryItem(name: "league", value: "78"), //Germany bundesliga
-    //
-    ////URLQueryItem(name: "live", value: "all"),
-    //URLQueryItem(name: "date", value: "2020-12-28")
-    //]
+   
     //let url = urlPathComponents.url
 
 //

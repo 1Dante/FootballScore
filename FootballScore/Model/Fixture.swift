@@ -62,6 +62,7 @@ struct Fixtures: Decodable, Hashable{
         self.date = try fixtureNestedContainer.decode(String.self, forKey: .date)
         
         let leagueNestedContainer = try conteiner.nestedContainer(keyedBy: CodingKeys.self, forKey: .league)
+        self.id = try leagueNestedContainer.decode(Int.self, forKey: .id)
         self.country = try leagueNestedContainer.decode(String.self, forKey: .country)
         self.leagueName = try leagueNestedContainer.decode(String.self, forKey: .name)
         
